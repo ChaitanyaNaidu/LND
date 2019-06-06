@@ -1,0 +1,74 @@
+{
+	"info": {
+		"name": "InitiateTransfersV01",
+		"_postman_id": "c9a136c5-7271-4ed3-8e80-8d16ef2d4083",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9998/v1/customers/1234/transfers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\": \"020119945\",\n\t\"to\":\"020119944\",\n\t\"amount\":10000.0,\n\t\"payment_reference\": \"investment\",\n\t\"purpose_of_transaction\": \"investment\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9998/v1/customers/1234/transfers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"v1",
+						"customers",
+						"1234",
+						"transfers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9998/v1/customers/1234/transfers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\": \"020119945\",\n\t\"to\":\"020119944\",\n\t\"amount\":1000.00,\n\t\"payment_reference\": \"investment\",\n\t\"purpose_of_transaction\": \"investment\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9998/v1/customers/1234/transfers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"v1",
+						"customers",
+						"1234",
+						"transfers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
